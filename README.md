@@ -4,6 +4,31 @@
 
 This project implements BCH (16,12) error correction encoding and decoding using Python and Tkinter. The BCH(16,12) code is designed to detect and correct errors in 16-digit encoded sequences, which are derived from 12-digit input data.
 
+## Mathematical Background
+
+### Vandermonde Matrix and Operations
+
+The Vandermonde Matrix is essential in constructing the generator matrix for BCH(16,12) codes. Below is an example of the Vandermonde matrix used in this implementation:
+
+![Vandermonde Matrix](path_to_your_image/vandermonde_matrix.png)
+
+The operations performed on this matrix to generate the **Parity Check Matrix** involve several steps of matrix transformations, which are necessary for detecting and correcting errors in the encoded sequences.
+
+#### Operations
+
+1. **Step 1**: Apply the first transformation to the Vandermonde matrix.  
+   ![First Operation](path_to_your_image/first_operation.png)
+
+2. **Step 2**: Perform the second transformation to create the Parity Check Matrix.  
+   ![Parity Check Matrix](path_to_your_image/parity_check_matrix.png)
+
+The resulting **Parity Check Matrix** is used in the error detection and correction process.
+
+### Syndrome Computation
+
+The syndrome computation helps in determining the presence and location of errors by applying modular arithmetic to the Parity Check Matrix.
+
+
 ## Features
 
 - **BCH Generator**: Computes check digits for a given 12-digit input.
