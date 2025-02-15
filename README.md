@@ -39,3 +39,30 @@ The implementation follows these key mathematical concepts:
    ```bash
    git clone https://github.com/yourusername/bch-16-12.git
    cd bch-16-12
+
+2. Install dependencies:
+
+   ```bash
+   pip install tkinter json
+
+3. Run the application:
+
+   ```bash
+   python BCH.py
+
+## Usage
+
+- **Input**: Enter a 12-digit sequence using numbers (0-9) and letters (A-C).
+- **Generate**: Click **Generate** to compute the check digits.
+- **Decode**: Click **Decode** to validate and correct errors in a 16-digit encoded input.
+- **Import JSON**: Use this option to process multiple input sequences from a JSON file.
+- **Export JSON**: Save the processed data to a JSON file.
+
+## References
+
+- **Mathematical Background**: Vandermonde Matrices and BCH Code Theory.
+- **Implementation Details**: Based on matrix transformations and modular arithmetic.
+
+## License
+
+This project is licensed under the MIT License.
