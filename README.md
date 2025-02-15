@@ -17,10 +17,10 @@ The operations performed on this matrix to generate the **Parity Check Matrix** 
 #### Operations
 
 1. **Step 1**: Apply the first transformation to the Vandermonde matrix.  
-   ![First Operation](path_to_your_image/first_operation.png)
+   ![First Operation](images/first_operation.png)
 
 2. **Step 2**: Perform the second transformation to create the Parity Check Matrix.  
-   ![Parity Check Matrix](path_to_your_image/parity_check_matrix.png)
+   ![Parity Check Matrix](images/parity_check_matrix.png)
 
 The resulting **Parity Check Matrix** is used in the error detection and correction process.
 
