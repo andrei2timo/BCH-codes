@@ -41,6 +41,16 @@ We obtain the check digits by following the steps below:
 
 The check digits ensure that the encoded sequence can be validated and any errors can be detected and corrected.
 
+### Deriving the Generator Matrix
+
+Based on the calculations of the check digits, we can derive the **Generator Matrix**. The generator matrix is obtained by:
+
+1. **Step 1**: Using the check digits and the original input sequence, apply modular arithmetic to generate the matrix.
+2. **Step 2**: The resulting matrix represents the transformation needed to encode the 12-digit input sequence into a 16-digit encoded sequence.
+
+![Generator_matrix](images/generator_matrix.png)
+
+The **Generator Matrix** plays a crucial role in the encoding process as it is used to generate the check digits and, ultimately, to encode the data. It will be used during the encoding process to ensure the integrity of the encoded sequence and to correct errors during the decoding phase.
 
 ## Features
 
@@ -62,13 +72,13 @@ The implementation follows these key mathematical concepts:
 
 ### Encoding Example
 
-**Input**: 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C  
-**Generated Check Digits**: D, E, F, G
+**Input**: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 2
+**Generated Check Digits**: 2 5 4 6
 
 ### Decoding Example
 
-**Input**: 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F, G  
-**Error Correction**: If an error is detected, it will be corrected and displayed.
+**Input**: 2, 3, 3, 4, 5, 6, 7, 8, 9, 10, 11, 2, 6, 7, 7, 13 
+**Error Correction**: If an error is detected, it will be corrected and displayed - 2, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 2, 6, 7, 7, 13.
 
 ## Installation
 
@@ -90,7 +100,7 @@ The implementation follows these key mathematical concepts:
 
 ## Usage
 
-- **Input**: Enter a 12-digit sequence using numbers (0-9) and letters (A-C).
+- **Input**: Enter a 12-digit sequence using numbers (0-12).
 - **Generate**: Click **Generate** to compute the check digits.
 - **Decode**: Click **Decode** to validate and correct errors in a 16-digit encoded input.
 - **Import JSON**: Use this option to process multiple input sequences from a JSON file.
