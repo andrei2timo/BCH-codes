@@ -10,7 +10,7 @@ This project implements BCH (16,12) error correction encoding and decoding using
 
 The Vandermonde Matrix is essential in constructing the generator matrix for BCH(16,12) codes. Below is an example of the Vandermonde matrix used in this implementation:
 
-![Vandermonde Matrix](path_to_your_image/vandermonde_matrix.png)
+![Vandermonde Matrix](images/vandermonde_matrix.png)
 
 The operations performed on this matrix to generate the **Parity Check Matrix** involve several steps of matrix transformations, which are necessary for detecting and correcting errors in the encoded sequences.
 
