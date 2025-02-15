@@ -28,6 +28,19 @@ The resulting **Parity Check Matrix** is used in the error detection and correct
 
 The syndrome computation helps in determining the presence and location of errors by applying modular arithmetic to the Parity Check Matrix.
 
+### Check Digits Calculation
+
+We obtain the check digits by following the steps below:
+
+1. **Step 1**: Start with the 12-digit input sequence.
+![Getting the check digits 1](images/check_digits1.png)
+2. **Step 2**: Use the generator matrix (derived from the Vandermonde matrix) to compute the check digits.
+![Getting the check digits 2](images/check_digits2.png)
+3. **Step 3**: Append the check digits to the original 12-digit input sequence to form a complete 16-digit encoded sequence.
+![Obtaining the digits after applying the arithmetic modulo](images/last_check_digits.png)
+
+The check digits ensure that the encoded sequence can be validated and any errors can be detected and corrected.
+
 
 ## Features
 
