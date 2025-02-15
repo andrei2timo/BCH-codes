@@ -56,7 +56,6 @@ The **Generator Matrix** plays a crucial role in the encoding process as it is u
 
 - **BCH Generator**: Computes check digits for a given 12-digit input.
 - **Error Detection & Correction**: Uses syndrome calculations to detect and correct up to two errors in the encoded sequence.
-- **Hexadecimal Support**: Accepts hexadecimal inputs (e.g., A, B, C for values 10, 11, 12) and outputs check digits in hexadecimal format (e.g., D, E, F).
 - **JSON Import/Export**: Supports batch processing by importing and exporting multiple input sequences using JSON format.
 - **Graphical User Interface (GUI)**: Built with Tkinter to provide an easy-to-use interface for users.
 
